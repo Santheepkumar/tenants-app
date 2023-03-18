@@ -1,5 +1,6 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
+import { StatusBar } from "expo-status-bar";
 
 export const IntroScreen1 = ({ navigation }) => (
   <Intro
