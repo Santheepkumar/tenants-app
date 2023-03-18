@@ -1,6 +1,7 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
+import tw from "../../lib/tailwind";
 
 export const IntroScreen1 = ({ navigation }) => (
   <Intro
@@ -89,7 +90,7 @@ export default function Intro({ title, description, icon, next, skip }) {
             }}></View>
         </View>
         <TouchableOpacity onPress={next}>
-          <Text>Next</Text>
+         <Image style={tw`w-6 h-6`} source={require("../../../assets/arraw.png")}></Image>
         </TouchableOpacity>
       </View>
     </View>
